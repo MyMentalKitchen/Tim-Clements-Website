@@ -380,6 +380,15 @@ img {
     line-height: 1.7;
 }
 
+a.service-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.service-card-link:hover {
+    color: inherit;
+}
+
 /* --- MMK Section --- */
 .mmk {
     background: var(--color-white);
