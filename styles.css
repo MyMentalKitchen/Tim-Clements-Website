@@ -223,11 +223,36 @@ img {
     background: linear-gradient(165deg, var(--color-bg) 0%, #e4e8df 100%);
 }
 
-.hero-container {
-    max-width: 800px;
+.hero-split {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: var(--space-3xl) var(--space-md);
-    text-align: center;
+    padding: 0 var(--space-md);
+    gap: var(--space-xl);
+    min-height: calc(100vh - 72px);
+}
+
+.hero-container {
+    max-width: 640px;
+    padding: var(--space-3xl) 0;
+    text-align: left;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 60px rgba(59, 82, 64, 0.15);
+    object-fit: cover;
+    aspect-ratio: 3 / 4;
 }
 
 .hero-label {
@@ -255,13 +280,12 @@ img {
     color: var(--color-text-light);
     line-height: 1.8;
     max-width: 640px;
-    margin: 0 auto var(--space-xl);
+    margin: 0 0 var(--space-xl);
 }
 
 .hero-actions {
     display: flex;
     gap: var(--space-sm);
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -291,7 +315,7 @@ img {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: var(--space-3xl);
     align-items: start;
 }
@@ -309,6 +333,26 @@ img {
 
 .about-content strong {
     color: var(--color-text);
+}
+
+.about-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.about-portrait {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.about-portrait img {
+    width: 100%;
+    display: block;
+    border-radius: var(--radius-lg);
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .about-stats {
@@ -492,8 +536,16 @@ a.service-card-link:hover {
 }
 
 .venture-image {
-    height: 220px;
+    height: 260px;
     position: relative;
+    overflow: hidden;
+}
+
+.venture-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .smokehouse-image {
@@ -831,6 +883,36 @@ a.service-card-link:hover {
 
 /* --- Responsive --- */
 @media (max-width: 1024px) {
+    .hero-split {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-container {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hero-subtitle {
+        margin: 0 auto var(--space-xl);
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        object-position: center top;
+    }
+
     .about-grid,
     .mmk-grid {
         grid-template-columns: 1fr;
