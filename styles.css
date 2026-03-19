@@ -991,8 +991,8 @@ a.service-card-link:hover {
 
     .hero-image img {
         max-width: 280px;
-        aspect-ratio: 1;
-        border-radius: 50%;
+        aspect-ratio: 3 / 4;
+        border-radius: var(--radius-lg);
         object-position: center top;
     }
 
