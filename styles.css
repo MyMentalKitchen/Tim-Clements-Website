@@ -442,7 +442,11 @@ a.service-card-link:hover {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     gap: var(--space-3xl);
-    align-items: stretch;
+    align-items: start;
+}
+
+.mmk-sidebar {
+    padding-top: 4.5rem;
 }
 
 .mmk-content h2 {
@@ -722,16 +726,20 @@ a.service-card-link:hover {
 
 /* --- MMK Quote --- */
 .mmk-quote {
-    margin-bottom: var(--space-lg);
     padding: var(--space-lg);
     background: var(--color-bg);
     border-left: 4px solid var(--color-primary);
     border-radius: var(--radius);
 }
 
+.mmk-quote-full {
+    margin-top: var(--space-xl);
+    padding: var(--space-xl);
+}
+
 .mmk-quote p {
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--color-text-light);
     line-height: 1.8;
     margin-bottom: var(--space-sm);
@@ -928,7 +936,7 @@ a.service-card-link:hover {
     width: 100%;
     display: block;
     border-radius: var(--radius-lg);
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
 }
 
@@ -983,6 +991,10 @@ a.service-card-link:hover {
     .mmk-grid {
         grid-template-columns: 1fr;
         gap: var(--space-xl);
+    }
+
+    .mmk-sidebar {
+        padding-top: 0;
     }
 
     .services-grid,
