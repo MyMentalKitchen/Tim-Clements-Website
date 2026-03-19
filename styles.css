@@ -724,6 +724,12 @@ a.service-card-link:hover {
     border-width: 2px;
 }
 
+/* --- MMK Testimonial Section --- */
+.mmk-testimonial-section {
+    background: var(--color-white);
+    padding: var(--space-xl) 0;
+}
+
 /* --- MMK Quote --- */
 .mmk-quote {
     padding: var(--space-lg);
