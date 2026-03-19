@@ -603,6 +603,103 @@ a.service-card-link:hover {
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* --- Results / Proven Track Record --- */
+.results {
+    background: var(--color-bg);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.result-block {
+    background: var(--color-white);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.result-block h3 {
+    font-size: 1.3rem;
+    margin-bottom: var(--space-md);
+}
+
+.result-detail {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    display: block;
+    margin-top: var(--space-xs);
+}
+
+.result-block p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.result-block-highlight {
+    grid-column: 1 / -1;
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+    border-color: var(--color-primary-dark);
+}
+
+.result-block-highlight h3 {
+    color: var(--color-white);
+}
+
+.result-block-highlight p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Service card primary --- */
+.service-card-primary {
+    border-color: var(--color-primary);
+    border-width: 2px;
+}
+
+/* --- MMK Quote --- */
+.mmk-quote {
+    margin-bottom: var(--space-lg);
+    padding: var(--space-lg);
+    background: var(--color-bg);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius);
+}
+
+.mmk-quote p {
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: var(--space-sm);
+}
+
+.mmk-quote cite {
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--color-primary);
+}
+
+/* --- Philosophy expanded --- */
+.philosophy-expanded {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto var(--space-xl);
+}
+
+/* --- Testimonial proof point --- */
+.testimonial-proof p {
+    font-style: normal;
+}
+
 /* --- Testimonials --- */
 .testimonials {
     background: var(--color-white);
@@ -747,6 +844,14 @@ a.service-card-link:hover {
 
     .testimonials-grid {
         grid-template-columns: 1fr;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-block-highlight {
+        grid-column: auto;
     }
 }
 
