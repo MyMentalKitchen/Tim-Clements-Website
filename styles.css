@@ -344,6 +344,9 @@ img {
 .about-portrait {
     border-radius: var(--radius-lg);
     overflow: hidden;
+    max-width: 66.67%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-portrait img {
