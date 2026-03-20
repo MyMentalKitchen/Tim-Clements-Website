@@ -1083,7 +1083,7 @@ a.service-card-link:hover {
     }
 
     .hero-container {
-        padding: var(--space-xl) var(--space-md);
+        padding: var(--space-md) var(--space-md) var(--space-xl);
     }
 
     .hero-title {
