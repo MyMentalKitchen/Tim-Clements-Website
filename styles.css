@@ -53,6 +53,12 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 h1, h2, h3, h4 {
@@ -80,6 +86,7 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--space-md);
+    overflow: hidden;
 }
 
 /* --- Navigation --- */
